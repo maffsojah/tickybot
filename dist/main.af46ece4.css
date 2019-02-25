@@ -1,0 +1,16 @@
+#header {
+    background: #44accf;
+}
+
+#features {
+    background: lightseagreen;
+}
+
+
+#footer {
+    background: gray;
+}
+
+.bot {
+    float: inline-end;
+}
