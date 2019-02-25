@@ -14,32 +14,69 @@
 <script src="/main.af46ece4.js"></script></head>
 
 <body>
-    <div id="nav">
-        <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#">Add to Slack</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Add to Slack</a>
+            </li>
         </ul>
-    </div>
+    </nav>
+    <div class="container-fluid"></div>
     <div id="header">
-        <h1><strong>Ticky</strong>Bot</h1>
+        <h1 class="display-3"><strong>Ticky</strong>Bot</h1>
         <p>Let your team manage their support tickets 100% inside Slack</p>
-        <button>Add to <strong>Slack</strong></button>
+        <button type="button" class="btn btn-light">Add to <strong>Slack</strong></button>
         <img class="bot" src="/tickybot.32cc5ec7.svg" alt="TickyBot">
     </div>
     <div id="about">
         <h1>What is <strong>Ticky</strong>Bot</h1>
-        <p>TickyBot is a Slack Bot {bot icon} that lets you use support ticlets on Slack. This way, you don't need to
+        <p>TickyBot is a Slack Bot {bot icon} that lets you use support ticlets on Slack. This way, you don't need
+            to
             leave your beloved channel to assist your users, if you don't feel like it.</p>
-        <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status, or
+        <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status,
+            or
             write a reply, and the ticket will instantly update itself on our site.</p>
         <p>Su[port requests shouldn't be handles through Slack's direct messages. Image about someone asking silly
-            questions and the workplace admin asking him/her to open a support ticlet so other admins could look into
+            questions and the workplace admin asking him/her to open a support ticlet so other admins could look
+            into
             the issue</p>
     </div>
-    <div id="features">
+    <div class="row" id="features">
         <h1>How It Works</h1>
+        <div class="card col-sm-4" style="width: 18rem;">
+            <img src="/workplace.4ce19c73.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">You can add TickyBot to your Slack workplace by scrolling down or</p>
+                <a href="#">clicking here</a>
+            </div>
+        </div>
+        <div class="card col-sm-4" style="width: 18rem;">
+            <img src="/bubble.09eff098.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Your users can open a ticket by typing <code>/ticket</code> and their message into
+                    the chat
+                    field</p>
+
+            </div>
+        </div>
+        <div class="card col-sm-4" style="width: 18rem;">
+            <img src="/tasks.daa86458.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Once you or another admin solved their problems you can type <code>/ticket close
+                        #id</code> to
+                    close the ticket</p>
+            </div>
+        </div>
     </div>
     <div id="use">
         <h1>Start Using TickyBot Today</h1>
@@ -53,6 +90,7 @@
         <p>Source code is available on my <a href="https://github.com/maffsojah/tickybot">GitHub page</a></p>
         <p>The app is not created by, affiliated with, or supported by Slack technologies, Inc.</p>
     </div>
+    
     <script src="/main.1f19ae8e.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
