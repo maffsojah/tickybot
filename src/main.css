@@ -1,5 +1,6 @@
 #header {
     background: #44accf;
+    display: block;
 }
 
 #features {
@@ -11,6 +12,28 @@
     background: gray;
 }
 
+#features {
+    display: block;
+}
+
 .bot {
     float: inline-end;
+}
+
+.mycard {
+    margin: 20px;
+    background: #334c5b;
+}
+
+.mycard-body {
+    background: beige;
+}
+
+li {
+    font-size: 18px;
+}
+
+nav {
+    background: #2b4251;
+    color: coral;
 }
