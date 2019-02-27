@@ -7,12 +7,14 @@
 
 #about {
     padding-bottom: 60px;
+    font-size: 1.1rem;
 }
 
 #features {
-    background: lightseagreen;
+    background: cadetblue;
     display: block;
     padding-bottom: 60px;
+    font-size: 1.1rem;
 }
 
 #slackButton {
@@ -25,7 +27,13 @@
 
 
 #slackButton:hover svg {
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
+    transform: scale(1.2) rotate(20deg);
+}
+
+#slackButton:hover {
+    /* transform: rotate(45deg); */
+    transform: scale(0.98);
 }
 
 #slackButton::-moz-focus-inner {
@@ -41,10 +49,13 @@
 
 #use {
     padding-bottom: 60px;
+    font-size: 1.1rem;
 }
 
 #footer {
-    background: gray;
+    background: #2b4251;
+    font-size: 15px;
+    padding: 15px;
 }
 
 
@@ -73,9 +84,34 @@
     background: beige;
 }
 
+.menu-link {
+    color: orange !important;
+}
+
+.use-btn {
+    margin: 50px 50px;
+    background: #2b4251
+}
+
 
 h1 {
     padding: 10px;
+    color: rgb(40, 42, 44);
+}
+
+hr {
+    /* display: block; */
+    width: 15em;
+    margin-top: 0.1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+    border-bottom: aquamarine;
+    border-width: 0.2em;
+    border-color: aquamarine;
+}
+
+span {
+    color: rgb(40, 42, 44);
 }
 
 li {
@@ -85,4 +121,12 @@ li {
 nav {
     background: #2b4251;
     color: coral;
+}
+
+pre {
+    color: darkgray;
+}
+
+pre a {
+    color: darkgray;
 }

@@ -19,16 +19,16 @@
         <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#header">Home</a>
+                    <a class="nav-link menu-link" href="#header">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link menu-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link menu-link" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Add to Slack</a>
+                    <a class="nav-link menu-link" href="#">Add to Slack</a>
                 </li>
             </ul>
         </div>
@@ -40,11 +40,6 @@
                 <div class="col" style="text-align: center;">
                     <h1 class="display-2"><strong>Ticky</strong>Bot</h1>
                     <p class="header-text">Let your team manage their support tickets 100% inside Slack</p>
-                    <!-- <button type="button" class="btn btn-light btn-lg" data-toggle="button" aria-pressed="false"
-                        autocomplete="off">
-                        <img class="img-fluid" src="../assets/slack.svg" alt="..." style="width: 100% \9;">
-                        <span>Add to <strong>Slack</strong></span>
-                    </button> -->
                     <button type="button" id="slackButton" class="btn btn-light btn-lg text-left" data-toggle="button" aria-pressed="false" autocomplete="off">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65 70 145 140" fill="none" aria-hidden="true" tabindex="0">
                             <g>
@@ -62,7 +57,7 @@
                                 <path fill="#819C3C" d="M143.9,125.4c7.8-2.5,15.1-4.9,20.7-6.7c-2.5-7.8-4.9-15.1-6.7-20.7l-20.7,6.7L143.9,125.4z"></path>
                             </g>
                         </svg>
-                        <span class="ml-3">Add to Slack</span>
+                        <span class="ml-3">Add to <strong>Slack</strong></span>
                     </button>
                 </div>
                 <div class="col mx-auto" style="text-align: center;">
@@ -142,37 +137,43 @@
     <section id="about">
         <div class="container">
             <h1 class="text-center display-4">What is <strong>Ticky</strong>Bot</h1>
+            <hr>
             <div class="row">
-                <div class="col-md-6">
-                    <p>TickyBot is a Slack Bot {bot icon} that lets you use support ticlets on Slack. This way, you
+                <div class="col-md-6" style="padding-bottom: 35px;">
+                    <p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support ticlets on Slack.
+                        This way, you
                         don't
                         need
                         to
                         leave your beloved channel to assist your users, if you don't feel like it.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding-bottom: 35px;">
                     <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their
                         status,
                         or
                         write a reply, and the ticket will instantly update itself on our site.</p>
                 </div>
             </div>
-            <p>Support requests shouldn't be handles through Slack's direct messages. Image about someone asking silly
-                questions and the workplace admin asking him/her to open a support ticlet so other admins could look
-                into
-                the issue</p>
+            <p>Support requests shouldn't be handles through Slack's direct messages. </p>
+            <p><em>Image about someone asking silly
+                    questions and the workplace admin asking him/her to open a support ticlet so other admins could
+                    look
+                    into
+                    the issue</em></p>
         </div>
     </section>
     <section id="features">
         <div class="container">
             <h1 class="text-center display-4">How It Works</h1>
+            <hr>
             <div class="card-deck">
                 <div class="card mycard border-0">
                     <img src="/workplace.4ce19c73.svg" class="card-img-top img-card" alt="...">
-                    <div class="card-body bg-white">
-                        <p class="card-text text-center">You can add TickyBot to your Slack workplace by scrolling down
-                            or</p>
-                        <a href="#">clicking here</a>
+                    <div class="card-body bg-white text-center">
+                        <p class="card-text">You can add TickyBot to your Slack workplace by scrolling down
+                            or <br>
+                            <a href="#">clicking here</a></p>
+
                     </div>
                 </div>
                 <div class="card mycard border-0">
@@ -201,22 +202,41 @@
         </div>
     </section>
     <section id="use">
-        <div class="container">
+        <div class="container text-center">
             <h1 class="text-center display-4">Start Using TickyBot Today</h1>
+            <hr>
             <p class="text-center">TickyBot allows Slack teams to manage their support tickets 100% inside Slack,
                 without
                 having to switch
                 between different apps.</p>
-            <button type="button" class="btn btn-light btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <img src="/slack.1db9e53a.svg" alt="..."> Add to <strong>Slack</strong>
+            <button type="button" id="slackButton" class="btn btn-dark btn-lg text-left use-btn" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="65 70 145 140" fill="none" aria-hidden="true" tabindex="0">
+                    <g>
+                        <path fill="#ECB32D" d="M154.3,87.1c-1.9-5.7-8-8.8-13.7-7c-5.7,1.9-8.8,8-7,13.7l28.1,86.4c1.9,5.3,7.7,8.3,13.2,6.7
+                                                c5.8-1.7,9.3-7.8,7.4-13.4C182.3,173.3,154.3,87.1,154.3,87.1z"></path>
+                        <path fill="#63C1A0" d="M110.8,101.2c-1.9-5.7-8-8.8-13.7-7c-5.7,1.9-8.8,8-7,13.7l28.1,86.4c1.9,5.3,7.7,8.3,13.2,6.7
+                                                c5.8-1.7,9.3-7.8,7.4-13.4C138.8,187.4,110.8,101.2,110.8,101.2z"></path>
+                        <path fill="#E01A59" d="M189.7,158.6c5.7-1.9,8.8-8,7-13.7c-1.9-5.7-8-8.8-13.7-7l-86.5,28.2c-5.3,1.9-8.3,7.7-6.7,13.2
+                                                c1.7,5.8,7.8,9.3,13.4,7.4C103.4,186.7,189.7,158.6,189.7,158.6z"></path>
+                        <path fill="#331433" d="M114.5,183.1c5.6-1.8,12.9-4.2,20.7-6.7c-1.8-5.6-4.2-12.9-6.7-20.7l-20.7,6.7L114.5,183.1z"></path>
+                        <path fill="#D62027" d="M158.1,168.9c7.8-2.5,15.1-4.9,20.7-6.7c-1.8-5.6-4.2-12.9-6.7-20.7l-20.7,6.7L158.1,168.9z"></path>
+                        <path fill="#89D3DF" d="M175.5,115.1c5.7-1.9,8.8-8,7-13.7c-1.9-5.7-8-8.8-13.7-7l-86.4,28.1c-5.3,1.9-8.3,7.7-6.7,13.2
+                                                c1.7,5.8,7.8,9.3,13.4,7.4C89.3,143.1,175.5,115.1,175.5,115.1z"></path>
+                        <path fill="#258B74" d="M100.4,139.5c5.6-1.8,12.9-4.2,20.7-6.7c-2.5-7.8-4.9-15.1-6.7-20.7l-20.7,6.7L100.4,139.5z"></path>
+                        <path fill="#819C3C" d="M143.9,125.4c7.8-2.5,15.1-4.9,20.7-6.7c-2.5-7.8-4.9-15.1-6.7-20.7l-20.7,6.7L143.9,125.4z"></path>
+                    </g>
+                </svg>
+                <span class="ml-3 text-white">Add to <strong>Slack</strong></span>
             </button>
             <p class="text-center">... so you don't need to go back and forth with another app.</p>
     </div></section>
     <section id="footer">
         <div class="container">
-            <p>Made with Love by <a href="https://github.com/maffsojah">Terry Mafura</a></p>
-            <p>Source code is available on my <a href="https://github.com/maffsojah/tickybot">GitHub page</a></p>
-            <p>The app is not created by, affiliated with, or supported by Slack technologies, Inc.</p>
+            <div class="text-center text-white">
+                <pre>Made with <span style="color: #e25555; font-size: 15px;">&hearts;</span> by <a href="https://github.com/maffsojah">Terry Mafura</a></pre>
+                <pre>Source code is available on my <a href="https://github.com/maffsojah/tickybot">GitHub page</a></pre>
+                <pre>The app is not created by, affiliated with, or supported by Slack technologies, Inc.</pre>
+            </div>
         </div>
         
     </section>
