@@ -15,6 +15,30 @@
     padding-bottom: 60px;
 }
 
+#slackButton {
+    height: 75px;
+    width: 250px;
+    border: none;
+    /* background: none; */
+    cursor: pointer;
+}
+
+
+#slackButton:hover svg {
+    transform: rotate(45deg);
+}
+
+#slackButton::-moz-focus-inner {
+    border: 0;
+}
+
+#slackButton svg {
+    outline: none;
+    transition: transform 0.3s linear;
+    height: 50px;
+}
+
+
 #use {
     padding-bottom: 60px;
 }
