@@ -2,47 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="main.css">
-    <title>Tickybot Clone by Terry</title>
+  <link rel="stylesheet" href="main.css">
+  <title>Tickybot Clone by Terry</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark " data-toggle="affix">
-        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#header">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#">Add to Slack</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid"></div>
-    <section id="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col" style="text-align: center;">
-                    <h1 class="display-2"><strong>Ticky</strong>Bot</h1>
-                    <p class="header-text">Let your team manage their support tickets 100% inside Slack</p>
-                    <button type="button" id="slackButton" class="btn btn-light btn-lg text-left" data-toggle="button"
-                        aria-pressed="false" autocomplete="off">
+  <nav class="navbar navbar-expand-sm navbar-dark " data-toggle="affix">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#header">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&amp;scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">Add to Slack</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid"></div>
+  <section id="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col" style="text-align: center;">
+          <h1 class="display-2"><strong>Ticky</strong>Bot</h1>
+          <p class="header-text">Let your team manage their support tickets 100% inside Slack</p>
+          <button type="button" id="slackButton" class="btn btn-light btn-lg text-left" data-toggle="button" aria-pressed="false" autocomplete="off">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" viewBox="65 70 145 140" fill="none" aria-hidden="true" tabindex="0">
                             <g>
@@ -62,11 +60,10 @@
                         </svg>
                         <span class="ml-3">Add to <strong>Slack</strong></span>
                     </button>
-                </div>
-                <div class="col mx-auto" style="text-align: center;">
-                    <!-- <img class="img-fluid" src="../assets/tickybot.svg" alt="TickyBot" style="width: 100% \9;"> -->
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                        y="0px" viewBox="0 0 508 508" width="400px" height="400px">
+        </div>
+        <div class="col mx-auto" style="text-align: center;">
+          <!-- <img class="img-fluid" src="../assets/tickybot.svg" alt="TickyBot" style="width: 100% \9;"> -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 508 508" width="400px" height="400px">
                         <circle style="fill:#FFD05B;" cx="254" cy="254" r="254" />
                         <path style="fill:#F9B54C;" d="M90.8,448.8C134.8,486,191.6,508,254,508s118.8-22.4,163.2-59.2H90.8z" />
                         <g>
@@ -134,87 +131,69 @@
                         h34c13.2,0,24.4-10.8,26.4-25.6l2.8-20.4c4,2.4,8.8,4,13.6,4c14,0,25.6-11.6,25.6-25.6C339.6,199.2,328,188,314,188z" />
                         </g>
                     </svg>
-                </div>
-            </div>
         </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h1 class="text-center display-4">What is <strong>Ticky</strong>Bot</h1>
-            <hr>
-            <div class="row">
-                <div class="col-md-6" style="padding-bottom: 35px;">
-                    <p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support ticlets on Slack.
-                        This way, you
-                        don't
-                        need
-                        to
-                        leave your beloved channel to assist your users, if you don't feel like it.</p>
-                </div>
-                <div class="col-md-6" style="padding-bottom: 35px;">
-                    <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their
-                        status,
-                        or
-                        write a reply, and the ticket will instantly update itself on our site.</p>
-                </div>
-            </div>
-            <p>Support requests shouldn't be handles through Slack's direct messages. </p>
-            <p><em>Image about someone asking silly
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h1 class="text-center display-4">What is <strong>Ticky</strong>Bot</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-6" style="padding-bottom: 35px;">
+          <p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support ticlets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
+        </div>
+        <div class="col-md-6" style="padding-bottom: 35px;">
+          <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p>
+        </div>
+      </div>
+      <p>Support requests shouldn't be handles through Slack's direct messages. </p>
+      <p><em>Image about someone asking silly
                     questions and the workplace admin asking him/her to open a support ticlet so other admins could
                     look
                     into
                     the issue</em></p>
+    </div>
+  </section>
+  <section id="features">
+    <div class="container">
+      <h1 class="text-center display-4">How It Works</h1>
+      <hr>
+      <div class="card-deck">
+        <div class="card mycard border-0">
+          <img src="../assets/workplace.svg" class="card-img-top img-card" alt="...">
+          <div class="card-body bg-white text-center">
+            <p class="card-text">You can add TickyBot to your Slack workplace by scrolling down or <br>
+              <a href="#">clicking here</a></p>
+
+          </div>
         </div>
-    </section>
-    <section id="features">
-        <div class="container">
-            <h1 class="text-center display-4">How It Works</h1>
-            <hr>
-            <div class="card-deck">
-                <div class="card mycard border-0">
-                    <img src="../assets/workplace.svg" class="card-img-top img-card" alt="...">
-                    <div class="card-body bg-white text-center">
-                        <p class="card-text">You can add TickyBot to your Slack workplace by scrolling down
-                            or <br>
-                            <a href="#">clicking here</a></p>
+        <div class="card mycard border-0">
+          <img src="../assets/bubble.svg" class="card-img-top img-card" alt="...">
+          <div class="card-body bg-white">
+            <p class="card-text text-center">Your users can open a ticket by typing <code>/ticket</code> and their message into the chat field
+            </p>
 
-                    </div>
-                </div>
-                <div class="card mycard border-0">
-                    <img src="../assets/bubble.svg" class="card-img-top img-card" alt="...">
-                    <div class="card-body bg-white">
-                        <p class="card-text text-center">Your users can open a ticket by typing <code>/ticket</code>
-                            and
-                            their message
-                            into
-                            the chat
-                            field</p>
-
-                    </div>
-                </div>
-                <div class="card mycard border-0">
-                    <img src="../assets/tasks.svg" class="card-img-top img-card" alt="...">
-                    <div class="card-body bg-white">
-                        <p class="card-text text-center">Once you or another admin solved their problems you can type
-                            <code>/ticket
+          </div>
+        </div>
+        <div class="card mycard border-0">
+          <img src="../assets/tasks.svg" class="card-img-top img-card" alt="...">
+          <div class="card-body bg-white">
+            <p class="card-text text-center">Once you or another admin solved their problems you can type
+              <code>/ticket
                                 close
-                                #id</code> to
-                            close the ticket</p>
-                    </div>
-                </div>
-            </div>
+                                #id</code> to close the ticket</p>
+          </div>
         </div>
-    </section>
-    <section id="use">
-        <div class="container text-center">
-            <h1 class="text-center display-4">Start Using TickyBot Today</h1>
-            <hr>
-            <p class="text-center">TickyBot allows Slack teams to manage their support tickets 100% inside Slack,
-                without
-                having to switch
-                between different apps.</p>
-            <button type="button" id="slackButton" class="btn btn-dark btn-lg text-left use-btn" data-toggle="button"
-                aria-pressed="false" autocomplete="off">
+      </div>
+    </div>
+  </section>
+  <section id="use">
+    <div class="container text-center">
+      <h1 class="text-center display-4">Start Using TickyBot Today</h1>
+      <hr>
+      <p class="text-center">TickyBot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+      <button type="button" id="slackButton" class="btn btn-dark btn-lg text-left use-btn" data-toggle="button" aria-pressed="false" autocomplete="off">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" viewBox="65 70 145 140" fill="none" aria-hidden="true" tabindex="0">
                     <g>
@@ -234,26 +213,27 @@
                 </svg>
                 <span class="ml-3 text-white">Add to <strong>Slack</strong></span>
             </button>
-            <p class="text-center">... so you don't need to go back and forth with another app.</p>
-    </section>
-    <section id="footer">
-        <div class="container">
-            <div class="text-center text-white">
-                <pre>Made with <span style="color: #e25555; font-size: 15px;">&hearts;</span> by <a href="https://github.com/maffsojah">Terry Mafura</a></pre>
-                <pre>Source code is available on my <a href="https://github.com/maffsojah/tickybot">GitHub page</a></pre>
-                <pre>The app is not created by, affiliated with, or supported by Slack technologies, Inc.</pre>
-            </div>
-        </div>
-        </div>
-    </section>
-    <button id="back-to-top" onclick="topFunction()">
-        <img src="../assets/top.svg" alt="back to top">
-        <span class="screen-reader">Back to top</span>
-    </button>
+      <p class="text-center">... so you don't need to go back and forth with another app.</p>
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="text-center text-white">
+        <pre>Made with <span style="color: #e25555; font-size: 15px;">&hearts;</span> by <a href="https://github.com/maffsojah">Terry Mafura</a></pre>
+        <pre>Source code is available on my <a href="https://github.com/maffsojah/tickybot">GitHub page</a></pre>
+        <pre>The app is not created by, affiliated with, or supported by Slack technologies, Inc.</pre>
+      </div>
     </div>
-    <script src="main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    </div>
+  </section>
+  <button id="back-to-top" onclick="topFunction()">
+    <a href="#header">
+       <img src="../assets/top.svg" alt="back to top">
+        <span class="screen-reader">Back to top</span>
+    </a>
+    </button>
+  </div>
+  <script src="main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
